@@ -14,7 +14,7 @@ DATA_FILE=task1_data.txt
 for exp in $(seq 10 30); do
     n=$((2**exp))
     echo "Running n=2^${exp} = ${n}"
-    output=$(./task1 "$n")
+    output=$(.\task1 "$n")
     time_ms=$(echo "$output" | sed -n '1p')
     echo "$n $time_ms" >> "$DATA_FILE"
 done
