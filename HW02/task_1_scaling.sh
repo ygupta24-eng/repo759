@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 #SBATCH -p instruction
 #SBATCH -t 0-00:45:00
 #SBATCH -J task1_scaling
