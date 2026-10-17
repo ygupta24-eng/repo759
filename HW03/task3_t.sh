@@ -8,7 +8,7 @@
 #SBATCH --hint=nomultithread
  
 # Set this to the ts value with the lowest time in task3_ts.pdf
-BEST_TS=64
+BEST_TS=512
  
 g++ task3.cpp msort.cpp -Wall -O3 -std=c++17 -o task3 -fopenmp
 if [ ! -x ./task3 ]; then echo "ERROR: task3 failed to compile." >&2; exit 1; fi
