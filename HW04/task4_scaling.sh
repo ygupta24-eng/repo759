@@ -1,4 +1,3 @@
-
 #!/usr/bin/env bash
 #SBATCH -p instruction
 #SBATCH -t 0-00:30:00
